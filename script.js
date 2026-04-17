@@ -97,6 +97,19 @@ document.addEventListener('DOMContentLoaded', () => {
        CATALOG
        ============================================================ */
     const catalogItems = [
+        // ── INVITACIONES REALES (demo disponible) ──────────────────
+        {
+            id: 10,
+            title: 'Quinceañera Amelia',
+            category: 'quince',
+            catClass: 'cat-quince',
+            catLabel: '✨ XV Años',
+            img: 'https://images.unsplash.com/photo-1549417229-aa67d3263c09?auto=format&fit=crop&q=80&w=600',
+            link: 'https://alexaggira-creator.github.io/Invitacion-amelia/',
+            live: true   // ← tiene demo real
+        },
+
+        // ── DISEÑOS DEL CATÁLOGO (próximamente con demo) ───────────
         {
             id: 1,
             title: 'Boda Elegante',
@@ -121,20 +134,11 @@ document.addEventListener('DOMContentLoaded', () => {
             category: 'quince',
             catClass: 'cat-quince',
             catLabel: '✨ XV Años',
-            img: 'https://images.unsplash.com/photo-1549417229-aa67d3263c09?auto=format&fit=crop&q=80&w=600',
-            link: '#'
-        },
-        {
-            id: 4,
-            title: 'XV Años Floral',
-            category: 'quince',
-            catClass: 'cat-quince',
-            catLabel: '✨ XV Años',
             img: 'https://images.unsplash.com/photo-1530103862676-fa8c91abeead?auto=format&fit=crop&q=80&w=600',
             link: '#'
         },
         {
-            id: 5,
+            id: 4,
             title: 'Cumpleaños Gold',
             category: 'cumple',
             catClass: 'cat-cumple',
@@ -143,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link: '#'
         },
         {
-            id: 6,
+            id: 5,
             title: 'Cumpleaños de Princesa',
             category: 'cumple',
             catClass: 'cat-cumple',
@@ -152,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link: '#'
         },
         {
-            id: 7,
+            id: 6,
             title: 'Gender Reveal Pastel',
             category: 'reveal',
             catClass: 'cat-reveal',
@@ -161,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link: '#'
         },
         {
-            id: 8,
+            id: 7,
             title: 'Baby Shower Azul',
             category: 'reveal',
             catClass: 'cat-reveal',
@@ -170,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link: '#'
         },
         {
-            id: 9,
+            id: 8,
             title: 'Bautizo Celestial',
             category: 'bautizo',
             catClass: 'cat-bautizo',
@@ -179,6 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link: '#'
         }
     ];
+
 
     const grid    = document.getElementById('catalog-grid');
     const filters = document.querySelectorAll('.filter-btn');
@@ -201,14 +206,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             data.forEach(item => {
+                const isLive   = item.live === true;
                 const isDemo   = item.link !== '#';
-                const btnLabel = isDemo ? 'Ver Demo' : 'Próximamente';
+                const btnLabel = isDemo ? '👁 Ver Demo' : 'Próximamente';
                 const card = document.createElement('div');
                 card.className = 'catalog-card';
                 card.innerHTML = `
                     <div class="card-thumb">
                         <img src="${item.img}" alt="${item.title}" loading="lazy">
                         <span class="card-cat-pill ${item.catClass}">${item.catLabel}</span>
+                        ${isLive ? `<span class="card-live-badge"><i class="fas fa-circle"></i> En vivo</span>` : ''}
                         <div class="card-overlay">
                             <a href="${item.link}" class="btn btn-gold"
                                ${isDemo ? 'target="_blank"' : 'style="opacity:.6;pointer-events:none;"'}>
@@ -221,8 +228,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             <h4>${item.title}</h4>
                             <p>${item.catLabel.replace(/\p{Emoji_Presentation}|\p{Emoji}\uFE0F/gu, '').trim()}</p>
                         </div>
-                        <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+                        <div class="card-arrow ${isLive ? 'card-arrow-live' : ''}"><i class="fas fa-arrow-right"></i></div>
                     </div>`;
+
                 grid.appendChild(card);
             });
 

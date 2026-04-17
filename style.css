@@ -762,6 +762,46 @@ header.scrolled {
 }
 .empty-cat i { font-size: 2.5rem; margin-bottom: 14px; }
 
+/* Badge "En vivo" para invitaciones reales */
+.card-live-badge {
+    position: absolute;
+    bottom: 14px; right: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0,0,0,.75);
+    border: 1px solid rgba(201,168,76,.4);
+    color: var(--gold);
+    backdrop-filter: blur(8px);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    z-index: 2;
+}
+.card-live-badge i {
+    font-size: 0.5rem;
+    animation: pulse-dot 1.4s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50%      { opacity: 0.4; transform: scale(1.4); }
+}
+
+/* Flecha dorada en cards con demo real */
+.card-arrow-live {
+    background: rgba(201,168,76,.15);
+    border-color: rgba(201,168,76,.3);
+    color: var(--gold);
+}
+.catalog-card:hover .card-arrow-live {
+    background: var(--gold);
+    color: #000;
+}
+
+
+
 /* ============================================================
    PLANS
    ============================================================ */
