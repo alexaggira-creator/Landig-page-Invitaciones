@@ -1408,7 +1408,7 @@ header.scrolled {
     padding: 120px 0;
     position: relative;
     background-size: cover;
-    background-position: center;
+    background-position: center 20%; /* subida para ver mejor el diseño */
     background-attachment: fixed;
     display: flex;
     align-items: center;
