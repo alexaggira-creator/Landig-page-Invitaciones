@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ============================================================
        MOBILE MENU
        ============================================================ */
-    const menuBtn  = document.getElementById('mobile-menu-btn');
+    const menuBtn = document.getElementById('mobile-menu-btn');
     const mobileNav = document.getElementById('mobile-nav');
 
     menuBtn.addEventListener('click', () => {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
        CURRENCY SWITCHER
        ============================================================ */
     let activeCurrency = 'cop';
-    const allCurrBtns  = document.querySelectorAll('.currency-btn');
+    const allCurrBtns = document.querySelectorAll('.currency-btn');
 
     function formatMoney(val, currency) {
         if (currency === 'usd') {
@@ -49,11 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
             el.textContent = formatMoney(parseInt(raw), currency);
             // Small animation
             el.style.transform = 'scale(0.9)';
-            el.style.opacity   = '0.4';
+            el.style.opacity = '0.4';
             setTimeout(() => {
-                el.style.transition  = 'all .3s';
-                el.style.transform   = 'scale(1)';
-                el.style.opacity     = '1';
+                el.style.transition = 'all .3s';
+                el.style.transform = 'scale(1)';
+                el.style.opacity = '1';
             }, 50);
         });
 
@@ -99,14 +99,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const catalogItems = [
         // ── INVITACIONES REALES (demo disponible) ──────────────────
         {
+            id: 15,
+            title: '¡Celeste Cumple 5! (Minnie)',
+            category: 'cumple',
+            catClass: 'cat-cumple',
+            catLabel: '🎂 Cumpleaños',
+            img: 'WhatsApp Image 2026-04-17 at 8.59.47 PM.jpeg',
+            link: 'https://alexaggira-creator.github.io/Minnie/',
+            live: true
+        },
+        {
+            id: 14,
+            title: 'Cenicienta Mágica',
+            category: 'quince',
+            catClass: 'cat-quince',
+            catLabel: '✨ XV Años',
+            img: 'WhatsApp Image 2026-04-17 at 4.07.09 PM.jpeg',
+            link: 'https://alexaggira-creator.github.io/cenicienta/',
+            imgPos: 'center 20%'
+        },
+        {
             id: 10,
             title: 'Quinceañera Amelia',
             category: 'quince',
             catClass: 'cat-quince',
             catLabel: '✨ XV Años',
-            img: 'https://images.unsplash.com/photo-1549417229-aa67d3263c09?auto=format&fit=crop&q=80&w=600',
+            img: 'WhatsApp Image 2026-04-17 at 2.40.40 PM.jpeg',
             link: 'https://alexaggira-creator.github.io/Invitacion-amelia/',
-            live: true   // ← tiene demo real
+            imgPos: 'center 20%'   // ← ajusta este % para subir/bajar la imagen
         },
 
         // ── DISEÑOS DEL CATÁLOGO (próximamente con demo) ───────────
@@ -181,17 +201,54 @@ document.addEventListener('DOMContentLoaded', () => {
             catLabel: '🕊️ Bautizo',
             img: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=600',
             link: '#'
+        },
+        {
+            id: 9,
+            title: 'Baby Shower Rosa',
+            category: 'reveal',
+            catClass: 'cat-reveal',
+            catLabel: '🎀 Baby Shower',
+            img: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=600',
+            link: '#'
+        },
+        {
+            id: 11,
+            title: 'Primera Comunión',
+            category: 'comunion',
+            catClass: 'cat-comunion',
+            catLabel: '🙏 Comunión',
+            img: 'https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&q=80&w=600',
+            link: '#'
+        },
+        {
+            id: 12,
+            title: 'Aniversario Dorado',
+            category: 'aniversario',
+            catClass: 'cat-aniversario',
+            catLabel: '💑 Aniversario',
+            img: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&q=80&w=600',
+            link: '#'
+        },
+        {
+            id: 13,
+            title: 'Grado de Honor',
+            category: 'grado',
+            catClass: 'cat-grado',
+            catLabel: '🎓 Grados',
+            img: 'https://images.unsplash.com/photo-1627556704302-624286467c65?auto=format&fit=crop&q=80&w=600',
+            link: '#'
         }
     ];
 
 
-    const grid    = document.getElementById('catalog-grid');
+
+    const grid = document.getElementById('catalog-grid');
     const filters = document.querySelectorAll('.filter-btn');
 
     function renderCatalog(filter) {
         const data = filter === 'all' ? catalogItems : catalogItems.filter(i => i.category === filter);
 
-        grid.style.opacity   = '0';
+        grid.style.opacity = '0';
         grid.style.transform = 'translateY(12px)';
 
         setTimeout(() => {
@@ -206,14 +263,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             data.forEach(item => {
-                const isLive   = item.live === true;
-                const isDemo   = item.link !== '#';
+                const isLive = item.live === true;
+                const isDemo = item.link !== '#';
                 const btnLabel = isDemo ? '👁 Ver Demo' : 'Próximamente';
                 const card = document.createElement('div');
                 card.className = 'catalog-card';
                 card.innerHTML = `
                     <div class="card-thumb">
-                        <img src="${item.img}" alt="${item.title}" loading="lazy">
+                        <img src="${item.img}" alt="${item.title}" loading="lazy"
+                             style="object-position: ${item.imgPos || 'center center'}">
                         <span class="card-cat-pill ${item.catClass}">${item.catLabel}</span>
                         ${isLive ? `<span class="card-live-badge"><i class="fas fa-circle"></i> En vivo</span>` : ''}
                         <div class="card-overlay">
@@ -235,8 +293,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             grid.style.transition = 'opacity .4s ease, transform .4s ease';
-            grid.style.opacity    = '1';
-            grid.style.transform  = 'translateY(0)';
+            grid.style.opacity = '1';
+            grid.style.transform = 'translateY(0)';
         }, 180);
     }
 
@@ -308,7 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     reviews.forEach(r => {
         const stars = '★'.repeat(r.stars) + '☆'.repeat(5 - r.stars);
-        const card  = document.createElement('div');
+        const card = document.createElement('div');
         card.className = 'review-card';
         card.setAttribute('data-reveal', '');
         card.innerHTML = `
