@@ -436,7 +436,7 @@ header.scrolled {
     position: relative; 
     display: flex; 
     justify-content: center; 
-    margin-top: 60px; /* bajar el celular para alejarlo del header */
+    margin-top: 120px; /* bajarlo aún más según solicitado */
 }
 
 .phone-wrap { position: relative; width: 280px; margin: 0 auto; }
