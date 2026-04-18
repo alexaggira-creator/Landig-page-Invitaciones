@@ -344,8 +344,8 @@ header.scrolled {
    ============================================================ */
 .hero {
     min-height: 100vh;
-    padding-top: calc(var(--nav-h) + 60px);
-    padding-bottom: 80px;
+    padding-top: calc(var(--nav-h) + 100px);
+    padding-bottom: 120px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -551,7 +551,7 @@ header.scrolled {
 .stats-bar {
     background: transparent;
     padding: 0;
-    margin-top: -40px; /* solapa un poco con el hero */
+    margin-top: 20px; /* removido el margen negativo para dar aire */
     position: relative;
     z-index: 5;
 }
@@ -1318,7 +1318,7 @@ header.scrolled {
     .hero-sub         { font-size: 1.05rem; line-height: 1.7; }
 
     /* ── STATS ── */
-    .stats-bar { margin-top: 20px; }
+    .stats-bar { margin-top: -20px; } /* mantenemos un toque de solapamiento solo en móvil si se ve bien */
     .stats-grid { gap: 16px; }
     .stat { padding: 20px; width: calc(50% - 8px); }
     .stat strong { font-size: 1.8rem; }
