@@ -359,9 +359,9 @@ header.scrolled {
 
 .hero-inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.1fr 0.9fr; /* dar un poco más de peso al texto */
     align-items: center;
-    gap: 56px;
+    gap: 80px; /* más separación entre texto y celular */
     position: relative;
     z-index: 1;
 }
@@ -386,12 +386,12 @@ header.scrolled {
 
 .hero-content h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.4rem, 5vw, 3.82rem); /* tamaño más conservador para evitar el logo */
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem); /* tamaño reducido para que respire frente al celular */
     font-weight: 700;
     color: var(--text-h);
     margin-bottom: 24px;
     line-height: 1.15;
-    max-width: 620px; /* ancho controlado */
+    max-width: 540px; /* ancho más compacto */
 }
 .hero-content h1 em {
     font-style: italic;
