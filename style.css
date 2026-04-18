@@ -1408,7 +1408,7 @@ header.scrolled {
     padding: 120px 0;
     position: relative;
     background-size: cover;
-    background-position: center bottom; /* ajustada hacia abajo según solicitado */
+    background-position: center 80%; /* subida un poco desde el fondo */
     background-attachment: fixed;
     display: flex;
     align-items: center;

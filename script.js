@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             catLabel: '🎂 Cumpleaños',
             img: 'WhatsApp Image 2026-04-17 at 8.59.47 PM.jpeg',
             link: 'https://alexaggira-creator.github.io/Minnie/',
-            live: true
+            live: false
         },
         {
             id: 14,
