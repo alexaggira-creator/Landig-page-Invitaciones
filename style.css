@@ -1317,7 +1317,17 @@ header.scrolled {
 
     /* ── CATALOG ── */
     .catalog { padding: 80px 0; }
-    .catalog-grid { gap: 24px; }
+    .catalog-grid { 
+        grid-template-columns: 1fr 1fr; 
+        gap: 12px; 
+    }
+    .card-thumb { height: 240px; }
+    .card-footer { padding: 12px; flex-direction: column; align-items: flex-start; gap: 8px; }
+    .card-footer h4 { font-size: 0.82rem; line-height: 1.2; }
+    .card-footer p { font-size: 0.72rem; }
+    .card-arrow { display: none; } /* ocultar flecha en 2 columnas móvil para limpiar */
+    .card-live-badge { padding: 3px 8px; font-size: 0.6rem; bottom: 8px; right: 8px; }
+    .card-cat-pill { top: 8px; left: 8px; padding: 2px 8px; font-size: 0.6rem; }
 
     /* ── PLANES ── */
     .plans { padding: 80px 0; }
