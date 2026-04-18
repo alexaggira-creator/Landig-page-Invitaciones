@@ -344,8 +344,8 @@ header.scrolled {
    ============================================================ */
 .hero {
     min-height: 100vh;
-    padding-top: calc(var(--nav-h) + 120px);
-    padding-bottom: 140px;
+    padding-top: calc(var(--nav-h) + 180px); /* más espacio para dejar aire al logo */
+    padding-bottom: 150px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -386,12 +386,12 @@ header.scrolled {
 
 .hero-content h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.8rem, 5.5vw, 4.2rem); /* tamaño corregido para evitar solapamiento */
+    font-size: clamp(2.4rem, 5vw, 3.82rem); /* tamaño más conservador para evitar el logo */
     font-weight: 700;
     color: var(--text-h);
     margin-bottom: 24px;
-    line-height: 1.1;
-    max-width: 90%; /* evitar que choque con el celular */
+    line-height: 1.15;
+    max-width: 620px; /* ancho controlado */
 }
 .hero-content h1 em {
     font-style: italic;
