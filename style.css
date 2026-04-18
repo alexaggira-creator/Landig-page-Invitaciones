@@ -432,7 +432,12 @@ header.scrolled {
 .hero-proof strong { color: var(--text-h); }
 
 /* Phone Mockup */
-.hero-visual { position: relative; display: flex; justify-content: center; }
+.hero-visual { 
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    margin-top: 60px; /* bajar el celular para alejarlo del header */
+}
 
 .phone-wrap { position: relative; width: 280px; margin: 0 auto; }
 
