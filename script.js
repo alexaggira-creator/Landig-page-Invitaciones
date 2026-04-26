@@ -39,6 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
             'usd': 'en-US',
             'mxn': 'es-MX',
             'pen': 'es-PE',
+            'clp': 'es-CL',
+            'ars': 'es-AR',
+            'brl': 'pt-BR',
+            'gtq': 'es-GT',
             'eur': 'de-DE'
         };
         return new Intl.NumberFormat(locales[currency] || 'es-CO').format(val);
