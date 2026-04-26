@@ -344,26 +344,43 @@ header.scrolled {
 .mobile-nav ul { display: flex; flex-direction: column; gap: 16px; }
 .mobile-nav ul a { font-size: 1.05rem; font-weight: 600; color: var(--text-h); }
 .mobile-nav ul a:hover { color: var(--gold); }
+.mobile-currency-wrap {
+    margin: 20px 0 30px;
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.mobile-curr-label {
+    display: block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 14px;
+    font-weight: 700;
+}
 .mobile-currency {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 20px;
 }
 .mobile-currency .currency-btn {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 30px;
-    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 10px 14px;
     font-size: 0.8rem;
-    color: #fff;
+    color: #cbd5e1;
     font-weight: 700;
+    transition: all .3s;
 }
 .mobile-currency .currency-btn.active {
     background: var(--grad-primary);
     color: #fff;
     border-color: transparent;
+    box-shadow: 0 4px 15px rgba(95, 90, 246, 0.3);
 }
 
 /* ============================================================
