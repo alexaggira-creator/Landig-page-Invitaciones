@@ -121,7 +121,7 @@ img { max-width:100%; display:block; }
 }
 
 .section-sub {
-    color: #334155; /* Oscuro y sólido */
+    color: #1e293b; /* Casi negro para máximo contraste */
     max-width: 580px;
     margin: 0 auto 52px;
     text-align: center;
@@ -1368,6 +1368,16 @@ header.scrolled {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+    .hero-actions {
+        justify-content: center;
+        width: 100%;
+        gap: 12px;
+    }
+    .hero-actions .btn {
+        width: 100%;
+        max-width: 340px;
+    }
+    .hero-proof { justify-content: center; }
     .hero-visual {
         display: block;
         margin-top: 20px;

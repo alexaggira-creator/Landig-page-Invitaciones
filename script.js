@@ -107,7 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
        CATALOG
        ============================================================ */
     const catalogItems = [
-        // ── INVITACIONES REALES (demo disponible) ──────────────────
         {
             id: 15,
             title: '¡Celeste Cumple 5! (Minnie)',
@@ -116,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
             catLabel: '🎂 Cumpleaños',
             img: 'WhatsApp Image 2026-04-17 at 8.59.47 PM.jpeg',
             link: 'https://alexaggira-creator.github.io/Minnie/',
-            live: false
+            live: true
         },
         {
             id: 14,
@@ -126,23 +125,12 @@ document.addEventListener('DOMContentLoaded', () => {
             catLabel: '✨ XV Años',
             img: 'WhatsApp Image 2026-04-17 at 4.07.09 PM.jpeg',
             link: 'https://alexaggira-creator.github.io/cenicienta/',
+            live: true,
             imgPos: 'center 20%'
         },
         {
-            id: 10,
-            title: 'Quinceañera Amelia',
-            category: 'quince',
-            catClass: 'cat-quince',
-            catLabel: '✨ XV Años',
-            img: 'WhatsApp Image 2026-04-17 at 2.40.40 PM.jpeg',
-            link: 'https://alexaggira-creator.github.io/Invitacion-amelia/',
-            imgPos: 'center 20%'   // ← ajusta este % para subir/bajar la imagen
-        },
-
-        // ── DISEÑOS DEL CATÁLOGO (próximamente con demo) ───────────
-        {
             id: 1,
-            title: 'Boda Elegante',
+            title: 'Boda Real Premium',
             category: 'boda',
             catClass: 'cat-boda',
             catLabel: '💍 Boda',
@@ -150,57 +138,12 @@ document.addEventListener('DOMContentLoaded', () => {
             link: '#'
         },
         {
-            id: 2,
-            title: 'Boda en Jardín',
-            category: 'boda',
-            catClass: 'cat-boda',
-            catLabel: '💍 Boda',
-            img: 'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80&w=600',
-            link: '#'
-        },
-        {
-            id: 3,
-            title: 'Mis XV Primaveras',
-            category: 'quince',
-            catClass: 'cat-quince',
-            catLabel: '✨ XV Años',
-            img: 'https://images.unsplash.com/photo-1530103862676-fa8c91abeead?auto=format&fit=crop&q=80&w=600',
-            link: '#'
-        },
-        {
-            id: 4,
-            title: 'Cumpleaños Gold',
-            category: 'cumple',
-            catClass: 'cat-cumple',
-            catLabel: '🎂 Cumpleaños',
-            img: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&q=80&w=600',
-            link: '#'
-        },
-        {
-            id: 5,
-            title: 'Cumpleaños de Princesa',
-            category: 'cumple',
-            catClass: 'cat-cumple',
-            catLabel: '🎂 Cumpleaños',
-            img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=600',
-            link: '#'
-        },
-        {
             id: 6,
             title: 'Gender Reveal Pastel',
             category: 'reveal',
             catClass: 'cat-reveal',
-            catLabel: '🎀 Gender Reveal',
-            img: 'https://images.unsplash.com/photo-1558636508-e0db3814bd1d?auto=format&fit=crop&q=80&w=600',
-            link: '#'
-        },
-        {
-            id: 7,
-            title: 'Baby Shower Azul',
-            category: 'reveal',
-            catClass: 'cat-reveal',
             catLabel: '🎀 Baby Shower',
-            img: 'https://images.unsplash.com/photo-1607344648963-d13c5e25a7d3?auto=format&fit=crop&q=80&w=600',
+            img: 'https://images.unsplash.com/photo-1558636508-e0db3814bd1d?auto=format&fit=crop&q=80&w=600',
             link: '#'
         },
         {
@@ -210,15 +153,6 @@ document.addEventListener('DOMContentLoaded', () => {
             catClass: 'cat-bautizo',
             catLabel: '🕊️ Bautizo',
             img: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=600',
-            link: '#'
-        },
-        {
-            id: 9,
-            title: 'Baby Shower Rosa',
-            category: 'reveal',
-            catClass: 'cat-reveal',
-            catLabel: '🎀 Baby Shower',
-            img: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=600',
             link: '#'
         },
         {
@@ -232,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 12,
-            title: 'Aniversario Dorado',
+            title: 'Aniversario de Oro',
             category: 'aniversario',
             catClass: 'cat-aniversario',
             catLabel: '💑 Aniversario',
