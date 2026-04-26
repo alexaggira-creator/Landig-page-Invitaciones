@@ -1124,8 +1124,44 @@ header.scrolled {
 }
 .process-card:hover { transform: translateY(-8px); border-color: color-mix(in srgb, var(--step-color, var(--gold)) 30%, transparent); }
 .process-card:hover::before { transform: scaleX(1); }
-
-/* Ícono grande */
+/* ============================================================
+   FEATURED BIRTHDAY
+   ============================================================ */
+.featured-birthday {
+    padding: 120px 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+.featured-birthday::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.4) 100%);
+}
+.birthday-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+.birthday-content h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 24px;
+    text-shadow: 0 0 20px rgba(255,255,255,0.4); /* Sombra blanca solicitada */
+}
+.birthday-content p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: rgba(255,255,255,0.95);
+    text-shadow: 0 4px 12px rgba(0,0,0,0.5), 0 0 10px rgba(255,255,255,0.2);
+}
+.birthday-content .section-label {
+    color: var(--primary-vibrant);
+    margin-bottom: 16px;
+}
 .process-icon {
     width: 72px; height: 72px;
     border-radius: 20px;
