@@ -468,11 +468,50 @@ header.scrolled {
     font-weight: 500;
 }
 
-.hero-actions {
+.hero-currency-hint {
+    display: none;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 8px 16px;
+    border-radius: 50px;
+    width: fit-content;
+    border: 1px solid var(--glass-border);
+}
+.hero-currency-hint span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-h);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.mini-switcher {
     display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-bottom: 48px;
+    gap: 6px;
+}
+.curr-mini-btn {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: .3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.curr-mini-btn.active {
+    background: var(--grad-primary);
+    border-color: transparent;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(95, 90, 246, 0.2);
+}
+
+@media (max-width: 768px) {
+    .hero-currency-hint { display: flex; margin: 0 auto 24px; }
 }
 
 .hero-proof {

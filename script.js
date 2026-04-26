@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
        CURRENCY SWITCHER
        ============================================================ */
     let activeCurrency = 'cop';
-    const allCurrBtns = document.querySelectorAll('.currency-btn');
+    const allCurrBtns = document.querySelectorAll('.currency-btn, .curr-mini-btn');
 
     function formatMoney(val, currency) {
         const locales = {
