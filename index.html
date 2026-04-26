@@ -30,8 +30,10 @@
             <div class="nav-right">
                 <div class="currency-switcher" id="currency-switcher">
                     <button class="currency-btn active" data-currency="cop">COP</button>
-                    <span class="curr-divider">|</span>
                     <button class="currency-btn" data-currency="usd">USD</button>
+                    <button class="currency-btn" data-currency="mxn">MXN</button>
+                    <button class="currency-btn" data-currency="pen">PEN</button>
+                    <button class="currency-btn" data-currency="eur">EUR</button>
                 </div>
                 <a href="https://wa.me/573104104298" class="btn btn-gold nav-cta" target="_blank">
                     <i class="fab fa-whatsapp"></i> Cotizar ahora
@@ -52,6 +54,9 @@
             <div class="mobile-currency">
                 <button class="currency-btn active" data-currency="cop">🇨🇴 COP</button>
                 <button class="currency-btn" data-currency="usd">🇺🇸 USD</button>
+                <button class="currency-btn" data-currency="mxn">🇲🇽 MXN</button>
+                <button class="currency-btn" data-currency="pen">🇵🇪 PEN</button>
+                <button class="currency-btn" data-currency="eur">🇪🇺 EUR</button>
             </div>
             <a href="https://wa.me/573104104298" class="btn btn-gold" target="_blank">
                 <i class="fab fa-whatsapp"></i> Cotizar ahora
@@ -65,8 +70,10 @@
         <section id="inicio" class="hero">
             <div class="hero-overlay"></div>
             <div class="container hero-inner">
-                <div class="hero-content" data-reveal>
-
+                    <div class="hero-eyebrow">
+                        <span class="dot"></span>
+                        Tendencia Digital 2026
+                    </div>
                     <h1>
                         Invitaciones digitales
                         <em>que tus invitados</em>
@@ -159,7 +166,7 @@
         <section class="why">
             <div class="container">
                 <div class="section-label" data-reveal>¿Por qué elegirnos?</div>
-                <h2 class="section-title" data-reveal>La invitación que <span class="text-gold">merece</span> tu evento</h2>
+                <h2 class="section-title" data-reveal>La invitación que <span class="text-indigo">merece</span> tu evento</h2>
                 <div class="why-grid">
                     <div class="why-card" data-reveal>
                         <div class="why-icon" style="--c:#ffb400"><i class="fas fa-wand-magic-sparkles"></i></div>
@@ -203,7 +210,7 @@
         <section id="planes" class="plans">
             <div class="container">
                 <div class="section-label" data-reveal>Inversión</div>
-                <h2 class="section-title" data-reveal>Planes <span class="text-gold">claros</span>, resultados <span class="text-pink">increíbles</span></h2>
+                <h2 class="section-title" data-reveal>Planes <span class="text-indigo">claros</span>, resultados <span class="text-pink">increíbles</span></h2>
                 <p class="section-sub" data-reveal>Sin letras pequeñas. Elige el plan y nosotros hacemos la magia.</p>
                 <div class="plans-grid">
 
@@ -215,7 +222,12 @@
                             <p class="plan-desc">Perfecto para quien quiere algo profesional y elegante sin complicaciones.</p>
                             <div class="plan-price">
                                 <span class="p-currency">$</span>
-                                <span class="p-amount" data-cop="40000" data-usd="10">40.000</span>
+                                <span class="p-amount" 
+                                    data-cop="40000" 
+                                    data-usd="10" 
+                                    data-mxn="180" 
+                                    data-pen="40" 
+                                    data-eur="9">40.000</span>
                                 <span class="p-label">COP</span>
                             </div>
                             <div class="plan-delivery"><i class="fas fa-clock"></i> Entrega: 4 a 6 días hábiles</div>
@@ -241,7 +253,12 @@
                             <p class="plan-desc">Para quienes quieren una invitación única y completamente a su medida.</p>
                             <div class="plan-price">
                                 <span class="p-currency">$</span>
-                                <span class="p-amount" data-cop="60000" data-usd="15">60.000</span>
+                                <span class="p-amount" 
+                                    data-cop="60000" 
+                                    data-usd="15" 
+                                    data-mxn="270" 
+                                    data-pen="60" 
+                                    data-eur="14">60.000</span>
                                 <span class="p-label">COP</span>
                             </div>
                             <div class="plan-delivery"><i class="fas fa-clock"></i> Entrega: 4 a 6 días hábiles</div>
@@ -322,7 +339,7 @@
         <section id="resenas" class="testimonials">
             <div class="container">
                 <div class="section-label" data-reveal>Opiniones reales</div>
-                <h2 class="section-title" data-reveal>Lo que dicen nuestras <span class="text-gold">familias felices</span></h2>
+                <h2 class="section-title" data-reveal>Lo que dicen nuestras <span class="text-indigo">familias felices</span></h2>
                 <p class="section-sub" data-reveal>Más de 500 eventos celebrados. Estas son algunas de sus historias.</p>
                 <div class="reviews-grid" id="reviews-grid"></div>
             </div>

@@ -34,10 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const allCurrBtns = document.querySelectorAll('.currency-btn');
 
     function formatMoney(val, currency) {
-        if (currency === 'usd') {
-            return new Intl.NumberFormat('en-US').format(val);
-        }
-        return new Intl.NumberFormat('es-CO').format(val);
+        const locales = {
+            'cop': 'es-CO',
+            'usd': 'en-US',
+            'mxn': 'es-MX',
+            'pen': 'es-PE',
+            'eur': 'de-DE'
+        };
+        return new Intl.NumberFormat(locales[currency] || 'es-CO').format(val);
     }
 
     function switchCurrency(currency) {
@@ -45,8 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update all price amounts
         document.querySelectorAll('.p-amount').forEach(el => {
-            const raw = currency === 'usd' ? el.dataset.usd : el.dataset.cop;
+            const raw = el.getAttribute(`data-${currency}`);
             el.textContent = formatMoney(parseInt(raw), currency);
+            
+            // Symbol handling (optional refinement)
+            const parent = el.parentElement;
+            const symbol = parent.querySelector('.p-currency');
+            if (symbol) symbol.textContent = currency === 'eur' ? '€' : '$';
+
             // Small animation
             el.style.transform = 'scale(0.9)';
             el.style.opacity = '0.4';
