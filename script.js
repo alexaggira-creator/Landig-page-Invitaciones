@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <img src="${item.img}" alt="${item.title}" loading="lazy"
                              style="object-position: ${item.imgPos || 'center center'}">
                         <span class="card-cat-pill ${item.catClass}">${item.catLabel}</span>
-                        ${isLive ? `<span class="card-live-badge"><i class="fas fa-circle"></i> En vivo</span>` : ''}
+                        ${isLive ? `` : ''}
                         <div class="card-overlay">
                             <a href="${item.link}" class="btn btn-gold"
                                ${isDemo ? 'target="_blank"' : 'style="opacity:.6;pointer-events:none;"'}>
