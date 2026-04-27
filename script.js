@@ -142,6 +142,26 @@ document.addEventListener('DOMContentLoaded', () => {
        ============================================================ */
     const catalogItems = [
         {
+            id: 17,
+            title: 'Laura – Mis 7 Añitos Mágicos',
+            category: 'cumple',
+            catClass: 'cat-cumple',
+            catLabel: '🎂 Cumpleaños',
+            img: 'laura_thumb.png',
+            link: 'https://alexaggira-creator.github.io/laura/',
+            live: true
+        },
+        {
+            id: 16,
+            title: 'Baby Shower Perla',
+            category: 'reveal',
+            catClass: 'cat-reveal',
+            catLabel: '🎀 Baby Shower',
+            img: 'perla_thumb.png',
+            link: 'https://alexaggira-creator.github.io/perla/',
+            live: true
+        },
+        {
             id: 15,
             title: '¡Celeste Cumple 5! (Minnie)',
             category: 'cumple',
