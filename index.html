@@ -100,7 +100,7 @@
                             <button class="curr-mini-btn" data-currency="usd">🇺🇸</button>
                             <button class="curr-mini-btn" data-currency="mxn">🇲🇽</button>
                             <button class="curr-mini-btn" data-currency="eur">🇪🇺</button>
-                            <button class="curr-mini-btn" data-modal-trigger="currencies">···</button>
+                            <button class="curr-mini-btn" id="coin-trigger"><i class="fas fa-coins"></i></button>
                         </div>
                     </div>
 
@@ -170,7 +170,7 @@
             <div class="container">
                 <div class="section-label" data-reveal>Portafolio</div>
                 <h2 class="section-title" data-reveal>Diseños para <span class="text-pink">cada momento</span></h2>
-                <p class="section-sub" data-reveal style="color:#000000; font-weight:800; font-size: 1.15rem; background: rgba(255,255,255,0.6); display: inline-block; padding: 4px 12px; border-radius: 8px;">Diseños exclusivos creados para capturar la esencia de tu gran día.</p>
+                <p class="section-sub" data-reveal style="color:#64748b; font-weight:800; font-size: 1.15rem; background: rgba(255,255,255,0.6); display: inline-block; padding: 4px 12px; border-radius: 8px;">Diseños exclusivos creados para capturar la esencia de tu gran día.</p>
                 <div class="filter-row" data-reveal>
                     <button class="filter-btn active" data-filter="all">✦ Todos</button>
                     <button class="filter-btn" data-filter="boda">💍 Bodas</button>
@@ -222,7 +222,7 @@
                 <div class="birthday-content" data-reveal>
                     <div class="section-label">Categoría Estrella</div>
                     <h2>Celebraciones <span class="text-pink">Mágicas</span></h2>
-                    <p style="color: #ffffff; font-weight: 700; font-size: 1.2rem; text-shadow: 0 2px 10px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5);">Diseños exclusivos creados para capturar la esencia de tus momentos más importantes. Personalizamos cada detalle para que la primera impresión de tu evento sea simplemente inolvidable.</p>
+                    <p style="color: #cbd5e1; font-weight: 700; font-size: 1.2rem; text-shadow: 0 2px 10px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5);">Diseños exclusivos creados para capturar la esencia de tus momentos más importantes. Personalizamos cada detalle para que la primera impresión de tu evento sea simplemente inolvidable.</p>
                     <a href="https://alexaggira-creator.github.io/cenicienta/" class="btn btn-gold" target="_blank">
                         <i class="fas fa-eye"></i> Ver ejemplo Cenicienta
                     </a>
@@ -441,6 +441,26 @@
         <i class="fab fa-whatsapp"></i>
         <span class="fab-tooltip">¡Escríbenos!</span>
     </a>
+
+    <!-- Currency Modal -->
+    <div class="currency-modal" id="currency-modal">
+        <div class="c-modal-overlay" id="c-modal-overlay"></div>
+        <div class="c-modal-content">
+            <button class="c-modal-close" id="c-modal-close">&times;</button>
+            <h3>Elige tu moneda</h3>
+            <div class="c-modal-grid">
+                <button class="currency-btn" data-currency="cop">🇨🇴 COP</button>
+                <button class="currency-btn" data-currency="usd">🇺🇸 USD</button>
+                <button class="currency-btn" data-currency="mxn">🇲🇽 MXN</button>
+                <button class="currency-btn" data-currency="pen">🇵🇪 PEN</button>
+                <button class="currency-btn" data-currency="clp">🇨🇱 CLP</button>
+                <button class="currency-btn" data-currency="ars">🇦🇷 ARS</button>
+                <button class="currency-btn" data-currency="brl">🇧🇷 BRL</button>
+                <button class="currency-btn" data-currency="gtq">🇬🇹 GTQ</button>
+                <button class="currency-btn" data-currency="eur">🇪🇺 EUR</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

@@ -87,6 +87,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* ============================================================
+       CURRENCY MODAL LOGIC
+       ============================================================ */
+    const coinTrigger = document.getElementById('coin-trigger');
+    const currencyModal = document.getElementById('currency-modal');
+    const closeModal = document.getElementById('c-modal-close');
+    const modalOverlay = document.getElementById('c-modal-overlay');
+
+    if (coinTrigger && currencyModal) {
+        coinTrigger.addEventListener('click', () => {
+            currencyModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scroll
+        });
+
+        const closeFunc = () => {
+            currencyModal.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        closeModal.addEventListener('click', closeFunc);
+        modalOverlay.addEventListener('click', closeFunc);
+
+        // Close when a currency is selected in the modal
+        currencyModal.querySelectorAll('.currency-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                setTimeout(closeFunc, 300); // Slight delay for feedback
+            });
+        });
+    }
+
+    /* ============================================================
        SCROLL REVEAL
        ============================================================ */
     const revealAll = document.querySelectorAll('[data-reveal]');
