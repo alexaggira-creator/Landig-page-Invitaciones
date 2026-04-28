@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: 'reveal',
             catClass: 'cat-reveal',
             catLabel: '🎀 Baby Shower',
-            img: 'perla_thumb.png',
+            img: 'WhatsApp Image 2026-04-28 at 4.07.46 PM.jpeg',
             link: 'https://alexaggira-creator.github.io/perla/',
             live: true,
             imgPos: 'center top'
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: 'cumple',
             catClass: 'cat-cumple',
             catLabel: '🎂 Cumpleaños',
-            img: 'minnie_thumb.png',
+            img: 'WhatsApp Image 2026-04-28 at 4.08.48 PM.jpeg',
             link: 'https://alexaggira-creator.github.io/Minnie/',
             live: true,
             imgPos: 'center top'
