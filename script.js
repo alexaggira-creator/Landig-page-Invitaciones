@@ -142,14 +142,59 @@ document.addEventListener('DOMContentLoaded', () => {
        ============================================================ */
     const catalogItems = [
         {
+            id: 20,
+            title: 'Mis XV Años - Amelia',
+            category: 'quince',
+            catClass: 'cat-quince',
+            catLabel: '✨ XV Años',
+            img: 'amelia_thumb.png',
+            link: 'https://alexaggira-creator.github.io/Invitacion-amelia/',
+            live: true,
+            imgPos: 'center 20%'
+        },
+        {
+            id: 19,
+            title: 'Nuestra Boda - Sara y Camilo',
+            category: 'boda',
+            catClass: 'cat-boda',
+            catLabel: '💍 Boda',
+            img: 'sara_thumb.jpg',
+            link: 'https://alexaggira-creator.github.io/Sara-y-camilo/',
+            live: true,
+            imgPos: 'center 30%'
+        },
+        {
+            id: 18,
+            title: 'Bautizo de Miguel',
+            category: 'bautizo',
+            catClass: 'cat-bautizo',
+            catLabel: '🕊️ Bautizo',
+            img: 'miguel_thumb.jpg',
+            link: 'https://alexaggira-creator.github.io/Miguel/',
+            live: true,
+            imgPos: 'center 20%'
+        },
+        {
             id: 17,
+            title: 'Mi Primera Comunión - Sofía',
+            category: 'comunion',
+            catClass: 'cat-comunion',
+            catLabel: '🙏 Comunión',
+            img: 'sofia_thumb.jpeg',
+            link: 'https://alexaggira-creator.github.io/Sofia/',
+            live: true,
+            imgPos: 'center 20%'
+        },
+        {
+            id: 101,
             title: 'Laura – Mis 7 Añitos Mágicos',
             category: 'cumple',
             catClass: 'cat-cumple',
             catLabel: '🎂 Cumpleaños',
-            img: 'laura_thumb.png',
+            img: 'WhatsApp Image 2026-04-17 at 2.40.40 PM.jpeg',
             link: 'https://alexaggira-creator.github.io/laura/',
-            live: true
+            live: true,
+            imgPos: 'center 20%'
         },
         {
             id: 16,
@@ -157,9 +202,10 @@ document.addEventListener('DOMContentLoaded', () => {
             category: 'reveal',
             catClass: 'cat-reveal',
             catLabel: '🎀 Baby Shower',
-            img: 'perla_thumb.png',
+            img: 'WhatsApp Image 2026-04-17 at 9.42.17 PM.jpeg',
             link: 'https://alexaggira-creator.github.io/perla/',
-            live: true
+            live: true,
+            imgPos: 'center 20%'
         },
         {
             id: 15,
@@ -181,60 +227,6 @@ document.addEventListener('DOMContentLoaded', () => {
             link: 'https://alexaggira-creator.github.io/cenicienta/',
             live: true,
             imgPos: 'center 20%'
-        },
-        {
-            id: 1,
-            title: 'Boda Real Premium',
-            category: 'boda',
-            catClass: 'cat-boda',
-            catLabel: '💍 Boda',
-            img: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=600',
-            link: '#'
-        },
-        {
-            id: 6,
-            title: 'Gender Reveal Pastel',
-            category: 'gender',
-            catClass: 'cat-reveal',
-            catLabel: '👶 Revelación de Género',
-            img: 'https://images.unsplash.com/photo-1558636508-e0db3814bd1d?auto=format&fit=crop&q=80&w=600',
-            link: '#'
-        },
-        {
-            id: 8,
-            title: 'Bautizo Celestial',
-            category: 'bautizo',
-            catClass: 'cat-bautizo',
-            catLabel: '🕊️ Bautizo',
-            img: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=600',
-            link: '#'
-        },
-        {
-            id: 11,
-            title: 'Primera Comunión',
-            category: 'comunion',
-            catClass: 'cat-comunion',
-            catLabel: '🙏 Comunión',
-            img: 'https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&q=80&w=600',
-            link: '#'
-        },
-        {
-            id: 12,
-            title: 'Aniversario de Oro',
-            category: 'aniversario',
-            catClass: 'cat-aniversario',
-            catLabel: '💑 Aniversario',
-            img: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&q=80&w=600',
-            link: '#'
-        },
-        {
-            id: 13,
-            title: 'Grado de Honor',
-            category: 'grado',
-            catClass: 'cat-grado',
-            catLabel: '🎓 Grados',
-            img: 'https://images.unsplash.com/photo-1627556704302-624286467c65?auto=format&fit=crop&q=80&w=600',
-            link: '#'
         }
     ];
 
