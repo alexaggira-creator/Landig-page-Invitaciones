@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'amelia_thumb.png',
             link: 'https://alexaggira-creator.github.io/Invitacion-amelia/',
             live: true,
-            imgPos: 'center 20%'
+            imgPos: 'center top'
         },
         {
             id: 19,
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'sara_thumb.jpg',
             link: 'https://alexaggira-creator.github.io/Sara-y-camilo/',
             live: true,
-            imgPos: 'center 30%'
+            imgPos: 'center top'
         },
         {
             id: 18,
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'miguel_thumb.jpg',
             link: 'https://alexaggira-creator.github.io/Miguel/',
             live: true,
-            imgPos: 'center 20%'
+            imgPos: 'center top'
         },
         {
             id: 17,
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'sofia_thumb.jpeg',
             link: 'https://alexaggira-creator.github.io/Sofia/',
             live: true,
-            imgPos: 'center 20%'
+            imgPos: 'center top'
         },
         {
             id: 101,
@@ -191,10 +191,10 @@ document.addEventListener('DOMContentLoaded', () => {
             category: 'cumple',
             catClass: 'cat-cumple',
             catLabel: '🎂 Cumpleaños',
-            img: 'WhatsApp Image 2026-04-17 at 2.40.40 PM.jpeg',
+            img: 'laura_thumb.png',
             link: 'https://alexaggira-creator.github.io/laura/',
             live: true,
-            imgPos: 'center 20%'
+            imgPos: 'center top'
         },
         {
             id: 16,
@@ -202,10 +202,10 @@ document.addEventListener('DOMContentLoaded', () => {
             category: 'reveal',
             catClass: 'cat-reveal',
             catLabel: '🎀 Baby Shower',
-            img: 'WhatsApp Image 2026-04-17 at 9.42.17 PM.jpeg',
+            img: 'perla_thumb.png',
             link: 'https://alexaggira-creator.github.io/perla/',
             live: true,
-            imgPos: 'center 20%'
+            imgPos: 'center top'
         },
         {
             id: 15,
@@ -213,9 +213,10 @@ document.addEventListener('DOMContentLoaded', () => {
             category: 'cumple',
             catClass: 'cat-cumple',
             catLabel: '🎂 Cumpleaños',
-            img: 'WhatsApp Image 2026-04-17 at 8.59.47 PM.jpeg',
+            img: 'minnie_thumb.png',
             link: 'https://alexaggira-creator.github.io/Minnie/',
-            live: true
+            live: true,
+            imgPos: 'center top'
         },
         {
             id: 14,
@@ -223,10 +224,10 @@ document.addEventListener('DOMContentLoaded', () => {
             category: 'quince',
             catClass: 'cat-quince',
             catLabel: '✨ XV Años',
-            img: 'WhatsApp Image 2026-04-17 at 4.07.09 PM.jpeg',
+            img: 'cenicienta_thumb.png',
             link: 'https://alexaggira-creator.github.io/cenicienta/',
             live: true,
-            imgPos: 'center 20%'
+            imgPos: 'center top'
         }
     ];
 
