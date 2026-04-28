@@ -2,26 +2,26 @@
    SURPRISE INVITATIONS — BRAND DESIGN SYSTEM
    Paleta: Negro · Blanco · Dorado
    ============================================================ */:root {
-    /* ── Expert "Dreamy Boutique" Palette ── */
-    --primary: #5f5af6;           /* Modern Indigo */
-    --primary-vibrant: #f02aa2;   /* Electric Magenta */
-    --accent: #f59e0b;            /* Warm Amber for highlights */
+    /* ── Expert "Elegant Premium" Palette ── */
+    --primary: #d4af37;           /* Elegant Gold */
+    --primary-vibrant: #b38b22;   /* Deep Gold */
+    --accent: #f9d423;            /* Bright Gold */
     
-    /* ── Surface Lilac System ── */
-    --bg-deep: #f8f7ff;           /* Base Lilac Tint */
+    /* ── Surface Clean System ── */
+    --bg-deep: #fafafa;           /* Bone White / Off-white */
     --bg-surface: #ffffff;
-    --bg-card: rgba(255, 255, 255, 0.7);
+    --bg-card: rgba(255, 255, 255, 0.9);
     
     /* ── Deep Contrast Typography ── */
-    --text-h:  #0f172a;           /* Almost Black for Impact */
-    --text-b:  #334155;           /* Solid Slate for readability */
-    --text-dim: #64748b;          /* Muted for secondary info */
+    --text-h:  #1a1a1a;           /* Deep Black for Titles */
+    --text-b:  #333333;           /* Dark Slate for body */
+    --text-dim: #666666;          /* Muted */
     
     /* ── Luxury Effects ── */
-    --glass: rgba(255, 255, 255, 0.5);
-    --glass-border: rgba(95, 90, 246, 0.08);
-    --shadow-vibrant: 0 10px 40px rgba(95, 90, 246, 0.12); /* Color-tinted shadow */
-    --shadow-festive: 0 20px 40px rgba(240, 42, 162, 0.18);
+    --glass: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(212, 175, 55, 0.2);
+    --shadow-vibrant: 0 10px 40px rgba(212, 175, 55, 0.15); 
+    --shadow-festive: 0 20px 40px rgba(0, 0, 0, 0.08);
     
     /* ── Layout ── */
     --max-w: 1240px;
@@ -31,9 +31,9 @@
     
     /* ── Sophisticated Gradients ── */
     --grad-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-vibrant) 100%);
-    --grad-mesh: radial-gradient(at 0% 0%, rgba(95, 90, 246, 0.08) 0, transparent 50%),
-                 radial-gradient(at 100% 0%, rgba(240, 42, 162, 0.08) 0, transparent 50%),
-                 radial-gradient(at 50% 100%, rgba(167, 139, 250, 0.1) 0, transparent 50%);
+    --grad-mesh: radial-gradient(at 0% 0%, rgba(212, 175, 55, 0.08) 0, transparent 50%),
+                 radial-gradient(at 100% 0%, rgba(26, 26, 26, 0.05) 0, transparent 50%),
+                 radial-gradient(at 50% 100%, rgba(212, 175, 55, 0.05) 0, transparent 50%);
 }
 
 
