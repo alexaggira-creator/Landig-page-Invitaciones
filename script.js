@@ -194,9 +194,9 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 6,
             title: 'Gender Reveal Pastel',
-            category: 'reveal',
+            category: 'gender',
             catClass: 'cat-reveal',
-            catLabel: '🎀 Baby Shower',
+            catLabel: '👶 Revelación de Género',
             img: 'https://images.unsplash.com/photo-1558636508-e0db3814bd1d?auto=format&fit=crop&q=80&w=600',
             link: '#'
         },
